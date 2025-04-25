@@ -34,7 +34,11 @@ export function Navbar() {
       <div className="container flex h-16 items-center justify-between mx-auto px-4">
         <div className="flex items-center gap-2">
           <a href="/" className="font-bold text-xl flex items-center gap-4">
-            <img src="/navlogo.webp" alt="Logo" className="h-12 w-12" />
+            <img
+              src="/astro-app/navlogo.webp"
+              alt="Logo"
+              className="h-12 w-12"
+            />
             <span className="hidden lg:flex">Choctaw Indian Fair</span>
           </a>
         </div>
