@@ -1,0 +1,61 @@
+---
+import { MapPin, Calendar, FerrisWheel } from "lucide-react";
+---
+
+<section
+  id="about"
+  class="w-full py-12 md:py-24 bg-gradient-to-b from-blue-700 to-blue-950 text-white"
+>
+  <div class="container px-4 md:px-6 mx-auto">
+    <div
+      class="flex flex-col items-center justify-center space-y-4 text-center"
+    >
+      <div class="space-y-2">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+          About The Fair
+        </h2>
+        <p
+          class="max-w-[900px] text-muted md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+        >
+          Here's some information about the fair, including location, dates, and
+          midway details.
+        </p>
+      </div>
+    </div>
+    <div class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3">
+      <div
+        class="flex flex-col items-center space-y-2 border rounded-lg p-6 text-center"
+      >
+        <MapPin className="h-12 w-12" />
+        <h3 class="text-xl font-bold">Location</h3>
+        <p class="text-sm text-muted">
+          101 Industrial Rd
+          <br />
+          Choctaw, MS 39350
+        </p>
+      </div>
+      <div
+        class="flex flex-col items-center space-y-2 border rounded-lg p-6 text-center"
+      >
+        <Calendar className="h-12 w-12" />
+        <h3 class="text-xl font-bold">Dates</h3>
+        <p class="text-sm text-muted">
+          Pre-Fair Events: July 2-7, 2025
+          <br />
+          Fair Events: June 8-12, 2025
+        </p>
+      </div>
+      <div
+        class="flex flex-col items-center space-y-2 border rounded-lg p-6 text-center"
+      >
+        <FerrisWheel className="h-12 w-12" />
+        <h3 class="text-xl font-bold">Midway</h3>
+        <p class="text-sm text-muted">
+          Family Night: July 7, 2025
+          <br />
+          Midway Offically Opens: July 8, 2025
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
