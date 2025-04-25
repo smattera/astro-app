@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Menu } from "lucide-react";
+import { MapPinned, Menu } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -54,14 +54,20 @@ export function Navbar() {
             </SheetTrigger>
             <SheetContent side="right">
               <SheetHeader>
-                <SheetTitle>Navigation</SheetTitle>
+                <SheetTitle>
+                  <img
+                    src="/astro-app/navlogo.webp"
+                    alt="Logo"
+                    className="h-12 w-12 mb-2"
+                  />
+                </SheetTitle>
               </SheetHeader>
               <nav className="flex flex-col gap-4 mt-6 mx-4">
                 {navItems.map((item) => (
                   <a
                     key={item.href}
                     href={item.href}
-                    className="text-lg font-medium transition-colors hover:text-primary"
+                    className="text-lg font-medium transition-colors text-white hover:text-muted"
                     onClick={() => setOpen(false)}
                   >
                     {item.title}
@@ -89,6 +95,13 @@ export function Navbar() {
                   </a>
                 </NavigationMenuItem>
               ))}
+              <NavigationMenuItem>
+                <a href="/fair-map">
+                  <Button variant="ghost">
+                    <MapPinned className="h-12 w-12" />
+                  </Button>
+                </a>
+              </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
           <div className="flex items-center gap-2">
