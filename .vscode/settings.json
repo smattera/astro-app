@@ -4,5 +4,6 @@
   "editor.formatOnSave": true,
   "[astro]": {
     "editor.defaultFormatter": "astro-build.astro-vscode"
-  }
+  },
+  "editor.tabSize": 2
 }

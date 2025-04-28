@@ -1,0 +1,179 @@
+---
+import Layout from "@/layouts/main.astro";
+import { Card } from "@/components/ui/card";
+---
+
+<Layout title="Culture">
+  <main class="flex-1">
+    <!-- Arts & Crafts Section -->
+    <section
+      id="arts-crafts"
+      class="from-fair-purple to-fair-pink bg-gradient-to-br py-12 md:py-24"
+    >
+      <div class="container mx-auto px-4">
+        <h2 class="mb-6 text-center text-3xl font-bold text-white">
+          Arts & Crafts
+        </h2>
+        <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
+          <Card className="overflow-hidden bg-black/50 p-0 text-white">
+            <div
+              class="flex h-40 items-center justify-center bg-gray-700 text-gray-400"
+            >
+              Image
+            </div>
+            <div class="p-6 text-center">
+              <h3 class="mb-2 text-xl font-semibold">Basket Weaving</h3>
+              <p class="text-muted">Learn the art of Choctaw basket weaving.</p>
+            </div>
+          </Card>
+          <Card className="overflow-hidden bg-black/50 p-0 text-white">
+            <div
+              class="flex h-40 items-center justify-center bg-gray-700 text-gray-400"
+            >
+              Image
+            </div>
+            <div class="p-6 text-center">
+              <h3 class="mb-2 text-xl font-semibold">Pottery</h3>
+              <p class="text-muted">
+                Traditional pottery making demonstrations.
+              </p>
+            </div>
+          </Card>
+          <Card className="overflow-hidden bg-black/50 p-0 text-white">
+            <div
+              class="flex h-40 items-center justify-center bg-gray-700 text-gray-400"
+            >
+              Image
+            </div>
+            <div class="p-6 text-center">
+              <h3 class="mb-2 text-xl font-semibold">Beadwork</h3>
+              <p class="text-muted">
+                Intricate beadwork patterns and hands-on workshops.
+              </p>
+            </div>
+          </Card>
+        </div>
+      </div>
+    </section>
+
+    <!-- Danceground Schedule Section -->
+    <section
+      id="dancegrounds"
+      class="from-fair-green to-fair-blue bg-gradient-to-br py-12 md:py-24"
+    >
+      <div class="container mx-auto px-4">
+        <h2 class="mb-6 text-center text-3xl font-bold text-white">
+          Danceground Schedule
+        </h2>
+        <div class="mx-auto grid max-w-2xl gap-8 sm:grid-cols-2 md:grid-cols-3">
+          <Card className="overflow-hidden bg-black/50 p-0 text-white">
+            <div
+              class="flex h-40 items-center justify-center bg-gray-700 text-gray-400"
+            >
+              Image
+            </div>
+            <div class="p-6 text-center">
+              <h3 class="font-semibold">July 8, 10:00 AM</h3>
+              <p>Community opening dance</p>
+            </div>
+          </Card>
+          <Card className="overflow-hidden bg-black/50 p-0 text-white">
+            <div
+              class="flex h-40 items-center justify-center bg-gray-700 text-gray-400"
+            >
+              Image
+            </div>
+            <div class="p-6 text-center">
+              <h3 class="font-semibold">July 9, 2:00 PM</h3>
+              <p>Traditional barn dance</p>
+            </div>
+          </Card>
+          <Card className="overflow-hidden bg-black/50 p-0 text-white">
+            <div
+              class="flex h-40 items-center justify-center bg-gray-700 text-gray-400"
+            >
+              Image
+            </div>
+            <div class="p-6 text-center">
+              <h3 class="font-semibold">July 10, 4:00 PM</h3>
+              <p>Social round dance</p>
+            </div>
+          </Card>
+          <Card className="overflow-hidden bg-black/50 p-0 text-white">
+            <div
+              class="flex h-40 items-center justify-center bg-gray-700 text-gray-400"
+            >
+              Image
+            </div>
+            <div class="p-6 text-center">
+              <h3 class="font-semibold">July 11, 6:00 PM</h3>
+              <p>Youth stomp dance</p>
+            </div>
+          </Card>
+          <Card className="overflow-hidden bg-black/50 p-0 text-white">
+            <div
+              class="flex h-40 items-center justify-center bg-gray-700 text-gray-400"
+            >
+              Image
+            </div>
+            <div class="p-6 text-center">
+              <h3 class="font-semibold">July 12, 8:00 PM</h3>
+              <p>Grand entry and honor songs</p>
+            </div>
+          </Card>
+        </div>
+      </div>
+    </section>
+
+    <!-- Traditional Food Section -->
+    <section
+      id="food"
+      class="from-fair-red to-fair-gold bg-gradient-to-br py-12 md:py-24"
+    >
+      <div class="container mx-auto px-4">
+        <h2 class="mb-6 text-center text-3xl font-bold text-white">
+          Traditional Food
+        </h2>
+        <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
+          <Card className="overflow-hidden bg-black/50 p-0 text-white">
+            <div
+              class="flex h-40 items-center justify-center bg-gray-700 text-gray-400"
+            >
+              Image
+            </div>
+            <div class="p-6 text-center">
+              <h3 class="mb-2 text-xl font-semibold">Shawii' (Fry Bread)</h3>
+              <p class="text-muted">
+                Crispy and fluffy fry bread served with honey.
+              </p>
+            </div>
+          </Card>
+          <Card className="overflow-hidden bg-black/50 p-0 text-white">
+            <div
+              class="flex h-40 items-center justify-center bg-gray-700 text-gray-400"
+            >
+              Image
+            </div>
+            <div class="p-6 text-center">
+              <h3 class="mb-2 text-xl font-semibold">Corn Soup</h3>
+              <p class="text-muted">Hearty corn soup with fresh vegetables.</p>
+            </div>
+          </Card>
+          <Card className="overflow-hidden bg-black/50 p-0 text-white">
+            <div
+              class="flex h-40 items-center justify-center bg-gray-700 text-gray-400"
+            >
+              Image
+            </div>
+            <div class="p-6 text-center">
+              <h3 class="mb-2 text-xl font-semibold">Wild Game Sausage</h3>
+              <p class="text-muted">
+                Locally sourced and seasoned to perfection.
+              </p>
+            </div>
+          </Card>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

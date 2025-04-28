@@ -18,12 +18,12 @@ import {
 } from "@/components/ui/navigation-menu";
 
 const navItems = [
-  { title: "Events", href: "/" },
-  { title: "Culture", href: "/about" },
-  { title: "Family Fun", href: "/services" },
-  { title: "Stickball", href: "/portfolio" },
-  { title: "Pageant", href: "/contact" },
-  { title: "Competitions", href: "/blog" },
+  { title: "Events", href: "/astro-app/events" },
+  { title: "Culture", href: "/astro-app/culture" },
+  { title: "Family Fun", href: "/astro-app/family" },
+  { title: "Stickball", href: "/astro-app/stickball" },
+  { title: "Pageant", href: "/astro-app/pageant" },
+  { title: "Competitions", href: "/astro-app/competitions" },
 ];
 
 export function Navbar() {
@@ -31,9 +31,12 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-black bg-gradient-to-r from-stone-900 via-stone-700 to-stone-950 text-white">
-      <div className="container flex h-16 items-center justify-between mx-auto px-4">
+      <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <div className="flex items-center gap-2">
-          <a href="/" className="font-bold text-xl flex items-center gap-4">
+          <a
+            href="/astro-app/"
+            className="flex items-center gap-4 text-xl font-bold"
+          >
             <img
               src="/astro-app/navlogo.webp"
               alt="Logo"
@@ -58,22 +61,22 @@ export function Navbar() {
                   <img
                     src="/astro-app/navlogo.webp"
                     alt="Logo"
-                    className="h-12 w-12 mb-2"
+                    className="mb-2 h-12 w-12"
                   />
                 </SheetTitle>
               </SheetHeader>
-              <nav className="flex flex-col gap-4 mt-6 mx-4">
+              <nav className="mx-4 mt-6 flex flex-col gap-4">
                 {navItems.map((item) => (
                   <a
                     key={item.href}
                     href={item.href}
-                    className="text-lg font-medium transition-colors text-white hover:text-muted"
+                    className="hover:text-muted text-lg font-medium text-white transition-colors"
                     onClick={() => setOpen(false)}
                   >
                     {item.title}
                   </a>
                 ))}
-                <div className="flex flex-col gap-2 mt-4">
+                <div className="mt-4 flex flex-col gap-2">
                   <Button variant="outline" onClick={() => setOpen(false)}>
                     Fair Map
                   </Button>

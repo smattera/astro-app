@@ -3,14 +3,15 @@ import { Button } from "./ui/button";
 import { ChevronRight } from "lucide-react";
 ---
 
-<section
+<!-- <section
   id="tribal-leadership"
   class="w-full py-12 md:py-24 bg-gradient-to-r from-purple-800 via-purple-500 to-indigo-950"
->
-  <div class="container px-4 md:px-6 mx-auto">
-    <div class="grid gap-8 lg:grid-cols-2 items-center">
+> -->
+<section id="tribal-leadership" class="bg-weave-pattern w-full py-12 md:py-24">
+  <div class="container mx-auto px-4 md:px-6">
+    <div class="grid items-center gap-8 lg:grid-cols-2">
       <!-- Square image of Tribal Chief and Princess together -->
-      <div class="flex justify-center animate-on-scroll">
+      <div class="animate-on-scroll flex justify-center">
         <div class="relative">
           <div
             class="aspect-square w-full max-w-[600px] overflow-hidden rounded-lg border-4 border-white shadow-lg"
@@ -18,7 +19,7 @@ import { ChevronRight } from "lucide-react";
             <img
               src="/astro-app/chiefprincess.webp"
               alt="Tribal Chief and Princess"
-              class="w-full h-full object-cover"
+              class="h-full w-full object-cover"
             />
           </div>
         </div>
@@ -26,10 +27,10 @@ import { ChevronRight } from "lucide-react";
 
       <!-- Welcome message and invitation -->
       <div
-        class="space-y-6 bg-black/50 p-6 rounded-lg shadow-lg animate-on-scroll"
+        class="animate-on-scroll space-y-6 rounded-lg bg-black/50 p-6 shadow-lg"
       >
         <h2
-          class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white"
+          class="text-3xl font-bold tracking-tighter text-white sm:text-4xl md:text-5xl"
         >
           Halito!
         </h2>
@@ -43,7 +44,7 @@ import { ChevronRight } from "lucide-react";
           is:
         </p>
 
-        <p class="mt-2 text-xl sm:text-3xl font-bold text-white">
+        <p class="mt-2 text-xl font-bold text-white sm:text-3xl">
           The Choctaw Spirit Lives On
         </p>
 
@@ -59,19 +60,19 @@ import { ChevronRight } from "lucide-react";
         </p>
 
         <h2
-          class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white"
+          class="text-3xl font-bold tracking-tighter text-white sm:text-4xl md:text-5xl"
         >
           Yakoki!
         </h2>
 
-        <div class="hidden items-center gap-2 flex-wrap lg:flex">
-          <Button className="mt-4 btn-hover">
+        <div class="hidden flex-wrap items-center gap-2 lg:flex">
+          <Button className="btn-hover mt-4">
             Princess Pageant <ChevronRight className="ml-2 h-4 w-4" />
           </Button>
-          <Button className="mt-4 btn-hover">
+          <Button className="btn-hover mt-4">
             Cultural Events <ChevronRight className="ml-2 h-4 w-4" />
           </Button>
-          <Button className="mt-4 btn-hover">
+          <Button className="btn-hover mt-4">
             Stickball Schedule <ChevronRight className="ml-2 h-4 w-4" />
           </Button>
         </div>
