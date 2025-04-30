@@ -70,17 +70,20 @@ export function Navbar() {
                   <a
                     key={item.href}
                     href={item.href}
-                    className="hover:text-muted text-lg font-medium text-white transition-colors"
+                    // className="hover:text-muted text-lg font-medium text-white transition-colors"
+                    className="pointer-events-none text-lg font-medium text-white/50 opacity-50 transition-colors"
                     onClick={() => setOpen(false)}
                   >
                     {item.title}
                   </a>
                 ))}
                 <div className="mt-4 flex flex-col gap-2">
-                  <Button variant="outline" onClick={() => setOpen(false)}>
+                  <Button variant="disabled" onClick={() => setOpen(false)}>
                     Fair Map
                   </Button>
-                  <Button onClick={() => setOpen(false)}>Buy Tickets</Button>
+                  <Button variant="disabled" onClick={() => setOpen(false)}>
+                    Buy Tickets
+                  </Button>
                 </div>
               </nav>
             </SheetContent>
@@ -93,22 +96,26 @@ export function Navbar() {
             <NavigationMenuList>
               {navItems.map((item) => (
                 <NavigationMenuItem key={item.href}>
-                  <a href={item.href}>
+                  {/* <a href={item.href}>
                     <Button variant={"ghost"}>{item.title}</Button>
-                  </a>
+                  </a> */}
+                  <Button variant="disabled">{item.title}</Button>
                 </NavigationMenuItem>
               ))}
               <NavigationMenuItem>
-                <a href="/fair-map">
+                {/* <a href="/fair-map">
                   <Button variant="ghost">
                     <MapPinned className="h-12 w-12" />
                   </Button>
-                </a>
+                </a> */}
+                <Button variant="disabled">
+                  <MapPinned className="h-12 w-12" />
+                </Button>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
           <div className="flex items-center gap-2">
-            <Button variant="secondary">Buy Tickets</Button>
+            <Button variant="disabled">Buy Tickets</Button>
           </div>
         </div>
       </div>

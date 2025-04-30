@@ -3,13 +3,13 @@ import { Button } from "./ui/button";
 ---
 
 <section
-  class="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-red-700 via-fair-red to-red-800 text-white"
+  class="via-fair-red w-full bg-gradient-to-br from-red-700 to-red-800 py-12 text-white md:py-24 lg:py-32"
 >
-  <div class="container px-4 md:px-6 mx-auto">
-    <div class="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
+  <div class="container mx-auto px-4 md:px-6">
+    <div class="grid items-center gap-6 lg:grid-cols-2 lg:gap-12">
       <div class="space-y-4">
         <div
-          class="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground"
+          class="bg-primary text-primary-foreground inline-block rounded-lg px-3 py-1 text-sm"
         >
           July 8-12, 2025
         </div>
@@ -21,19 +21,21 @@ import { Button } from "./ui/button";
           and vibrant culture with our friends and neighbors.
         </p>
         <div class="flex flex-col gap-2 min-[400px]:flex-row">
-          <Button size="lg" variant="secondary">
-            <a href="#register">Buy Tickets</a>
+          <Button size="lg" variant="disabled">
+            <!-- <a href="#register">Buy Tickets</a> -->
+            Buy Tickets
           </Button>
-          <Button size="lg">
-            <a href="#schedule">View Schedule</a>
+          <Button size="lg" variant="disabled">
+            <!-- <a href="#schedule">View Schedule</a> -->
+            View Schedule
           </Button>
         </div>
       </div>
-      <div class="mx-auto w-full aspect-video overflow-hidden rounded-xl">
+      <div class="mx-auto aspect-video w-full overflow-hidden rounded-xl">
         <video
           src="/astro-app/fair_vid.mp4"
           poster="/astro-app/fair_vid.webp"
-          class="object-cover w-full h-full"
+          class="h-full w-full object-cover"
           controls></video>
       </div>
     </div>
